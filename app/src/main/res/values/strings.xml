@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Money Conversor</string>
+
+    <!--Login -->
+    <string name="edit_username">User name or Email</string>
+    <string name="edit_user_name">Password</string>
+    <string name="button_log_in">Log in</string>
+    <string name="text_or">OR</string>
+    <string name="button_facebook">Login With Facebook</string>
+    <string name="button_twitter">Login With Twitter</string>
+    <string name="button_google">Login With Google</string>
+
+    <!--Converter -->
+    <string name="edit_new_value">Novo Valor</string>
+    <string name="button_convert">Converter</string>
+    <string name="spineer_currency_type_prompt">Tipo Moeda</string>
+    <string name="spineer_currency_wish_prompt">Moeda Desejada</string>
+
+    <!--Currency Symbols -->
+    <string-array name="currency_symbol_arrays">
+        <item>"AUD"</item>
+        <item>"BGN"</item>
+        <item>"BRL"</item>
+        <item>"CAD"</item>
+        <item>"CHF"</item>
+        <item>"CNY"</item>
+        <item>"CZK"</item>
+        <item>"DKK"</item>
+        <item>"GBP"</item>
+        <item>"HKD"</item>
+        <item>"HRK"</item>
+        <item>"HUF"</item>
+        <item>"IDR"</item>
+        <item>"ILS"</item>
+        <item>"INR"</item>
+        <item>"ISK"</item>
+        <item>"JPY"</item>
+        <item>"KRW"</item>
+        <item>"MXN"</item>
+        <item>"MYR"</item>
+        <item>"NOK"</item>
+        <item>"NZD"</item>
+        <item>"PHP"</item>
+        <item>"PLN"</item>
+        <item>"RON"</item>
+        <item>"RUB"</item>
+        <item>"SEK"</item>
+        <item>"SGD"</item>
+        <item>"THB"</item>
+        <item>"TRY"</item>
+        <item>"USD"</item>
+        <item>"ZAR"</item>
+    </string-array>
+</resources>
