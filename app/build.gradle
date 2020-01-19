@@ -46,13 +46,13 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
     implementation "org.koin:koin-android:$koinVersion"
     implementation "com.squareup.moshi:moshi:$moshiVersion"
+    implementation("com.squareup.moshi:moshi-kotlin:$moshiVersion")
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.retrofit2:converter-moshi:$retrofitMoshiVersion"
     implementation "com.squareup.okhttp3:okhttp:$okhttp3Version"
     implementation "com.squareup.okhttp3:logging-interceptor:$logginInterceptorVersion"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifeCycleVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifeCycleVersion"
 
     testImplementation 'junit:junit:4.12'

@@ -8,21 +8,19 @@ import kotlinx.coroutines.*
 
 class ConverterViewModel(private val converterRespository: ConverterRespository) : ViewModel() {
 
-    private val job = Job()
-    private val coroutineScope = CoroutineScope(Dispatchers.Main + job)
-
-    lateinit var currentQuotation: LiveData<Rate>
+    private var _currentQuotation = MutableLiveData<Rate>()
+    val currentQuotation: LiveData<Rate>
+        get() = _currentQuotation
 
     fun getCurrencyListWithoutItem(item: String, currencyList: Array<String>): Array<String> {
         val listWithoutItem = currencyList.toList().filterNot { it == item }
         return listWithoutItem.toTypedArray()
     }
 
-    fun convertCurrency(currency: String, value: Double, currencyWish: String) {
+    fun convertCurrency(currency: String, value: String, currencyWish: String) {
         val conversion = Conversion(currency, value, currencyWish)
-
-        currentQuotation = liveData {
-            emit(converterRespository.fetchCurrentQuotation(conversion))
+        viewModelScope.launch(context = viewModelScope.coroutineContext + Dispatchers.IO) {
+            _currentQuotation.postValue(converterRespository.fetchCurrentQuotation(conversion))
         }
     }
 }

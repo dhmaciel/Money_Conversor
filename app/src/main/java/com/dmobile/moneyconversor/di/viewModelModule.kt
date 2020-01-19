@@ -5,6 +5,6 @@ import com.dmobile.moneyconversor.ui.LoginViewModel
 import org.koin.dsl.module
 
 val converterModule = module {
-    factory { ConverterViewModel() }
+    factory { ConverterViewModel(get()) }
     factory { LoginViewModel() }
 }
