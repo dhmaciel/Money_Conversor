@@ -14,7 +14,8 @@ class ExchangeRateClient {
         val client = OkHttpClient().newBuilder()
             .addInterceptor(HttpLoggingInterceptor().apply {
                 level =
-                    if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY else HttpLoggingInterceptor.Level.NONE
+                    HttpLoggingInterceptor.Level.BODY
+//                    if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY else HttpLoggingInterceptor.Level.NONE
             })
             .build()
 

@@ -15,6 +15,7 @@
     <string name="button_convert">Converter</string>
     <string name="spineer_currency_type_prompt">Tipo Moeda</string>
     <string name="spineer_currency_wish_prompt">Moeda Desejada</string>
+    <string name="txt_value">valor</string>
 
     <!--Currency Symbols -->
     <string-array name="currency_symbol_arrays">

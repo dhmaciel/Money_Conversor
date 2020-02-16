@@ -11,14 +11,17 @@ import com.dmobile.moneyconversor.R
 import kotlinx.android.synthetic.main.activity_converter.*
 import org.koin.android.ext.android.inject
 
-class ConverterActivity : AppCompatActivity() {
+class ConverterActivity : AppCompatActivity(R.layout.activity_converter) {
+
+    // Based on: https://marvelapp.com/954bf71/screen/59420188
+    // https://proandroiddev.com/clean-architecture-data-flow-dependency-rule-615ffdd79e29
+    // https://github.com/sanogueralorenzo/Android-Kotlin-Clean-Architecture/tree/master/sample
 
     private val viewModel: ConverterViewModel by inject()
     private lateinit var currencyArray: Array<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_converter)
 
         currencyArray = resources.getStringArray(R.array.currency_symbol_arrays)
 
