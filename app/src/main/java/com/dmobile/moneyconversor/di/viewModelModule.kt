@@ -1,7 +1,7 @@
 package com.dmobile.moneyconversor.di
 
-import com.dmobile.moneyconversor.ui.ConverterViewModel
-import com.dmobile.moneyconversor.ui.LoginViewModel
+import presentation.converter.ConverterViewModel
+import presentation.login.LoginViewModel
 import org.koin.dsl.module
 
 val converterModule = module {

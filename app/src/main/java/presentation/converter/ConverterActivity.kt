@@ -1,11 +1,10 @@
-package com.dmobile.moneyconversor.ui
+package presentation.converter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import androidx.appcompat.widget.AppCompatTextView
 import androidx.lifecycle.Observer
 import com.dmobile.moneyconversor.R
 import kotlinx.android.synthetic.main.activity_converter.*

@@ -1,4 +1,4 @@
-package com.dmobile.moneyconversor.ui
+package presentation.login
 
 import androidx.lifecycle.ViewModel
 
